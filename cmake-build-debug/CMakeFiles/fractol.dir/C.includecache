@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/sklepper/dev/fractol/event.c
+fractol.h
+/Users/sklepper/dev/fractol/fractol.h
+
+/Users/sklepper/dev/fractol/fractol.h
+math.h
+-
+mlx.h
+/Users/sklepper/dev/fractol/mlx.h
+libft/includes/libft.h
+/Users/sklepper/dev/fractol/libft/includes/libft.h
+
+/Users/sklepper/dev/fractol/libft/includes/libft.h
+unistd.h
+-
+stdlib.h
+-
+
+/Users/sklepper/dev/fractol/main.c
+fractol.h
+/Users/sklepper/dev/fractol/fractol.h
+
