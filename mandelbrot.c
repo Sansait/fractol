@@ -6,7 +6,7 @@
 /*   By: sklepper <sklepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/14 11:41:23 by sklepper          #+#    #+#             */
-/*   Updated: 2018/09/21 14:07:15 by sklepper         ###   ########.fr       */
+/*   Updated: 2018/09/21 14:08:47 by sklepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ void	mandelbrot(int x, int y, t_data *d)
 	double dx;
 	double dx_tmp;
 	double dy;
-	double c_re = (y - WIDTH / 2.0) * 4.0 / WIDTH;
-	double c_im = (x - HEIGHT / 2.0) * 4.0 / WIDTH;
+	double c_re = (x - WIDTH / 2.0) * 4.0 / WIDTH;
+	double c_im = (y - HEIGHT / 2.0) * 4.0 / WIDTH;
 	int i;
 
 	dx = 0;
