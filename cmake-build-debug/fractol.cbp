@@ -82,10 +82,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/sklepper/dev/fractol/display.c">
+			<Option target="fractol"/>
+		</Unit>
+		<Unit filename="/Users/sklepper/dev/fractol/draw.c">
+			<Option target="fractol"/>
+		</Unit>
 		<Unit filename="/Users/sklepper/dev/fractol/event.c">
 			<Option target="fractol"/>
 		</Unit>
 		<Unit filename="/Users/sklepper/dev/fractol/main.c">
+			<Option target="fractol"/>
+		</Unit>
+		<Unit filename="/Users/sklepper/dev/fractol/mandelbrot.c">
 			<Option target="fractol"/>
 		</Unit>
 		<Unit filename="/Users/sklepper/dev/fractol/CMakeLists.txt">

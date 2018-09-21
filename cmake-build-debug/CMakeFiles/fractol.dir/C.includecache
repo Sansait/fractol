@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/sklepper/dev/fractol/event.c
-fractol.h
-/Users/sklepper/dev/fractol/fractol.h
-
 /Users/sklepper/dev/fractol/fractol.h
 math.h
 -
@@ -24,7 +20,7 @@ unistd.h
 stdlib.h
 -
 
-/Users/sklepper/dev/fractol/main.c
+/Users/sklepper/dev/fractol/mandelbrot.c
 fractol.h
 /Users/sklepper/dev/fractol/fractol.h
 

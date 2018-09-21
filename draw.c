@@ -1,33 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   event.c                                            :+:      :+:    :+:   */
+/*   draw.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sklepper <sklepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/09/14 10:29:53 by sklepper          #+#    #+#             */
-/*   Updated: 2018/09/14 11:34:51 by sklepper         ###   ########.fr       */
+/*   Created: 2018/09/14 11:33:45 by sklepper          #+#    #+#             */
+/*   Updated: 2018/09/14 12:02:00 by sklepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fractol.h"
 
-int			key_press(int key, t_data *d)
+void	draw(t_data *d)
 {
-	if (key == KEY_ESC)
-		exit(0);
-	return (0);
-}
+	int x;
+	int y;
 
-int			mouse_press(int b, int x, int y, t_data *d)
-{
-	if (b == SCROLL_UP)
+	x = 0;
+	y = 0;
+	while (y < HEIGHT)
 	{
-		d->zoom *= 1.1;
+		while (x < WIDTH)
+		{
+			mandelbrot(x, y, d);
+			x++;
+		}
+		x = 0;
+		y++;
 	}
-	else if (b == SCROLL_DOWN && d->zoom > 0.1)
-	{
-		d->zoom /= 1.1;
-	}
-	return (0);
 }

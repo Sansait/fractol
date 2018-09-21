@@ -4,8 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "/Users/sklepper/dev/fractol/display.c" "/Users/sklepper/dev/fractol/cmake-build-debug/CMakeFiles/fractol.dir/display.c.o"
+  "/Users/sklepper/dev/fractol/draw.c" "/Users/sklepper/dev/fractol/cmake-build-debug/CMakeFiles/fractol.dir/draw.c.o"
   "/Users/sklepper/dev/fractol/event.c" "/Users/sklepper/dev/fractol/cmake-build-debug/CMakeFiles/fractol.dir/event.c.o"
   "/Users/sklepper/dev/fractol/main.c" "/Users/sklepper/dev/fractol/cmake-build-debug/CMakeFiles/fractol.dir/main.c.o"
+  "/Users/sklepper/dev/fractol/mandelbrot.c" "/Users/sklepper/dev/fractol/cmake-build-debug/CMakeFiles/fractol.dir/mandelbrot.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
