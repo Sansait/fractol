@@ -82,6 +82,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/sklepper/dev/fractol/argument.c">
+			<Option target="fractol"/>
+		</Unit>
 		<Unit filename="/Users/sklepper/dev/fractol/display.c">
 			<Option target="fractol"/>
 		</Unit>

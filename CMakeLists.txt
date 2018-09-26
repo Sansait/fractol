@@ -3,7 +3,7 @@ project(fractol C)
 
 set(CMAKE_C_STANDARD 99)
 
-add_executable(fractol main.c event.c draw.c mandelbrot.c display.c)
+add_executable(fractol main.c event.c draw.c mandelbrot.c display.c argument.c)
 
 target_link_libraries(fractol "/usr/local/lib/libmlx.a")
 target_link_libraries(fractol "-framework AppKit")
