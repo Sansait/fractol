@@ -6,20 +6,27 @@
 /*   By: sklepper <sklepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/14 09:56:52 by sklepper          #+#    #+#             */
-/*   Updated: 2018/09/25 19:40:36 by sklepper         ###   ########.fr       */
+/*   Updated: 2018/09/28 14:54:43 by sklepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fractol.h"
 
-void	init(t_data *d, char *av)
+int		init(t_data *d, char *av)
 {
-	d->zoom = 1;
 	d->av = ft_strdup(av);
-	d->i_max = 1000;
-	d->r = 10;
-	d->g = 10;
-	d->b = 10;
+	if (!(d->mlx = malloc(sizeof(t_mlx))))
+		return (0);
+	d->mlx->zoom = 1;
+	d->mlx->i_max = 1000;
+	d->mlx->r = 10;
+	d->mlx->g = 10;
+	d->mlx->b = 10;
+	d->mlx->x_min = 0;
+	d->mlx->x_max = WIDTH;
+	d->mlx->y_min = 0;
+	d->mlx->y_max = HEIGHT;
+	return (1);
 }
 
 int main(int ac, char **av)
@@ -34,8 +41,9 @@ int main(int ac, char **av)
 	}
 	if (!(d = malloc(sizeof(t_data))))
 		return (0);
-	init(d, av[1]);
-//	w_fractal(d);
+	if (init(d, av[1]) == 0)
+		return (0);
+	w_fractal(d);
 	d->mlx->m_ptr = mlx_init();
 	d->mlx->w_ptr = mlx_new_window(d->mlx->m_ptr, WIDTH, HEIGHT, "fractol");
 	d->mlx->i_ptr = mlx_new_image(d->mlx->m_ptr, WIDTH, HEIGHT);
