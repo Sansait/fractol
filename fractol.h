@@ -6,7 +6,7 @@
 /*   By: sklepper <sklepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/11 10:45:18 by sklepper          #+#    #+#             */
-/*   Updated: 2018/09/28 14:44:09 by sklepper         ###   ########.fr       */
+/*   Updated: 2018/10/03 12:34:25 by sklepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,10 @@ typedef struct	s_mlx
 	double		zoom;
 	double		x_min;
 	double		x_max;
+	double		x_inc;
 	double		y_min;
 	double		y_max;
+	double		y_inc;
 }				t_mlx;
 
 typedef struct	s_data

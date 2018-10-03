@@ -6,7 +6,7 @@
 /*   By: sklepper <sklepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/14 11:41:23 by sklepper          #+#    #+#             */
-/*   Updated: 2018/09/28 14:54:43 by sklepper         ###   ########.fr       */
+/*   Updated: 2018/10/03 12:55:50 by sklepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,23 +34,30 @@ int		mandelbrot(double x, double y, t_mlx *mlx)
 
 void	draw_mandelbrot(t_mlx *mlx)
 {
-	double x;
-	double y;
-	double c_re;
-	double c_im;
+	double	dx;
+	double	dy;
+	int		x;
+	int		y;
+	double	c_re;
+	double	c_im;
 
-	x = mlx->x_min;
-	y = mlx->y_min;
+	mlx->x_inc = (mlx->x_max - mlx->x_min) / WIDTH;
+	mlx->y_inc = (mlx->y_max - mlx->y_min) / HEIGHT;
+	dy = mlx->y_min;
+	y = 0;
 	while (y < HEIGHT)
 	{
+		x = 0;
+		dx = mlx->x_min;
 		while (x < WIDTH)
 		{
-			c_re = (x - (WIDTH / mlx->zoom) / 2.0) * 4.0 / (WIDTH / mlx->zoom);
-			c_im = (y - (HEIGHT / mlx->zoom) / 2.0) * 4.0 / (WIDTH / mlx->zoom);
+			c_re = (dx - WIDTH / 2.0) * 4.0 / WIDTH;
+			c_im = (dy - HEIGHT / 2.0) * 4.0 / WIDTH;
 			mlx->img[y * WIDTH + x] = mandelbrot(c_re, c_im, mlx);
 			x++;
+			dx += mlx->x_inc;
 		}
-		x = 0;
 		y++;
+		dy += mlx->y_inc;
 	}
 }

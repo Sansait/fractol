@@ -20,10 +20,6 @@ unistd.h
 stdlib.h
 -
 
-/Users/sklepper/dev/fractol/main.c
-fractol.h
-/Users/sklepper/dev/fractol/fractol.h
-
 /Users/sklepper/dev/fractol/mandelbrot.c
 fractol.h
 /Users/sklepper/dev/fractol/fractol.h
