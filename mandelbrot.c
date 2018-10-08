@@ -41,8 +41,7 @@ void	draw_mandelbrot(t_mlx *mlx)
 	double	c_re;
 	double	c_im;
 
-	mlx->x_inc = (mlx->x_max - mlx->x_min) / WIDTH;
-	mlx->y_inc = (mlx->y_max - mlx->y_min) / HEIGHT;
+
 	dy = mlx->y_min;
 	y = 0;
 	while (y < HEIGHT)

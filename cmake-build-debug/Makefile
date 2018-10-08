@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/sklepper/dev/fractol
+CMAKE_SOURCE_DIR = /Users/sklepper/Dev/fractol
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/sklepper/dev/fractol/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/sklepper/Dev/fractol/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sklepper/dev/fractol/cmake-build-debug/CMakeFiles /Users/sklepper/dev/fractol/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sklepper/Dev/fractol/cmake-build-debug/CMakeFiles /Users/sklepper/Dev/fractol/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sklepper/dev/fractol/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sklepper/Dev/fractol/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -285,6 +285,33 @@ mandelbrot.c.s:
 	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/mandelbrot.c.s
 .PHONY : mandelbrot.c.s
 
+zoom.o: zoom.c.o
+
+.PHONY : zoom.o
+
+# target to build an object file
+zoom.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/zoom.c.o
+.PHONY : zoom.c.o
+
+zoom.i: zoom.c.i
+
+.PHONY : zoom.i
+
+# target to preprocess a source file
+zoom.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/zoom.c.i
+.PHONY : zoom.c.i
+
+zoom.s: zoom.c.s
+
+.PHONY : zoom.s
+
+# target to generate assembly for a file
+zoom.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/zoom.c.s
+.PHONY : zoom.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -312,6 +339,9 @@ help:
 	@echo "... mandelbrot.o"
 	@echo "... mandelbrot.i"
 	@echo "... mandelbrot.s"
+	@echo "... zoom.o"
+	@echo "... zoom.i"
+	@echo "... zoom.s"
 .PHONY : help
 
 

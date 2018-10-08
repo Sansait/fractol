@@ -6,21 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/Users/sklepper/dev/fractol/fractol.h
+/Users/sklepper/Dev/fractol/fractol.h
 math.h
 -
 mlx.h
-/Users/sklepper/dev/fractol/mlx.h
+/Users/sklepper/Dev/fractol/mlx.h
 libft/includes/libft.h
-/Users/sklepper/dev/fractol/libft/includes/libft.h
+/Users/sklepper/Dev/fractol/libft/includes/libft.h
 
-/Users/sklepper/dev/fractol/libft/includes/libft.h
+/Users/sklepper/Dev/fractol/libft/includes/libft.h
 unistd.h
 -
 stdlib.h
 -
 
-/Users/sklepper/dev/fractol/mandelbrot.c
+/Users/sklepper/Dev/fractol/zoom.c
 fractol.h
-/Users/sklepper/dev/fractol/fractol.h
+/Users/sklepper/Dev/fractol/fractol.h
 

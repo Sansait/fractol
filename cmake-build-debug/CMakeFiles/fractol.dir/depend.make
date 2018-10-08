@@ -25,3 +25,7 @@ CMakeFiles/fractol.dir/mandelbrot.c.o: ../fractol.h
 CMakeFiles/fractol.dir/mandelbrot.c.o: ../libft/includes/libft.h
 CMakeFiles/fractol.dir/mandelbrot.c.o: ../mandelbrot.c
 
+CMakeFiles/fractol.dir/zoom.c.o: ../fractol.h
+CMakeFiles/fractol.dir/zoom.c.o: ../libft/includes/libft.h
+CMakeFiles/fractol.dir/zoom.c.o: ../zoom.c
+

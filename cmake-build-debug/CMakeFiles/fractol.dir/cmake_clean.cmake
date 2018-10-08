@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/fractol.dir/mandelbrot.c.o"
   "CMakeFiles/fractol.dir/display.c.o"
   "CMakeFiles/fractol.dir/argument.c.o"
+  "CMakeFiles/fractol.dir/zoom.c.o"
   "fractol.pdb"
   "fractol"
 )

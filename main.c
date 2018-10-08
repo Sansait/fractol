@@ -6,7 +6,7 @@
 /*   By: sklepper <sklepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/14 09:56:52 by sklepper          #+#    #+#             */
-/*   Updated: 2018/10/03 12:33:48 by sklepper         ###   ########.fr       */
+/*   Updated: 2018/10/08 13:44:55 by sklepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int		init(t_data *d, char *av)
 	if (!(d->mlx = malloc(sizeof(t_mlx))))
 		return (0);
 	d->mlx->zoom = 1;
-	d->mlx->i_max = 1000;
+	d->mlx->i_max = 100;
 	d->mlx->r = 10;
 	d->mlx->g = 10;
 	d->mlx->b = 10;
@@ -26,6 +26,10 @@ int		init(t_data *d, char *av)
 	d->mlx->x_max = WIDTH;
 	d->mlx->y_min = 0;
 	d->mlx->y_max = HEIGHT;
+	d->mlx->x_inc = (d->mlx->x_max - d->mlx->x_min) / WIDTH;
+	d->mlx->y_inc = (d->mlx->y_max - d->mlx->y_min) / HEIGHT;
+	d->mlx->x_mid = ((double)WIDTH / 2) * d->mlx->x_inc;
+	d->mlx->y_mid = ((double)HEIGHT / 2) * d->mlx->y_inc;
 	return (1);
 }
 

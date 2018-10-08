@@ -6,7 +6,7 @@
 /*   By: sklepper <sklepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/11 10:45:18 by sklepper          #+#    #+#             */
-/*   Updated: 2018/10/03 12:34:25 by sklepper         ###   ########.fr       */
+/*   Updated: 2018/10/03 13:49:00 by sklepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@
 # define WIDTH		800
 # define HEIGHT		600
 # define KEY_ESC	53
+# define KEY_PLUS	69
+# define KEY_MINUS	78
 
 # define SCROLL_UP		4
 # define SCROLL_DOWN	5
@@ -35,9 +37,11 @@ typedef struct	s_mlx
 	int			b;
 	double		zoom;
 	double		x_min;
+	double		x_mid;
 	double		x_max;
 	double		x_inc;
 	double		y_min;
+	double		y_mid;
 	double		y_max;
 	double		y_inc;
 }				t_mlx;
@@ -56,6 +60,8 @@ int			mouse_press(int b, int x, int y, t_data *data);
 void		centraldisp(t_data *data);
 void		draw_mandelbrot(t_mlx *mlx);
 void		w_fractal(t_data *d);
+int			zoom(int x, int y, t_data *d, int zoom);
+
 
 
 #endif

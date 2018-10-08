@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/sklepper/dev/fractol/cmake-build-debug"/>
+				<Option working_dir="/Users/sklepper/Dev/fractol/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/sklepper/dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sklepper/dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sklepper/dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sklepper/dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/sklepper/Dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sklepper/Dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sklepper/Dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sklepper/Dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/sklepper/dev/fractol/cmake-build-debug"/>
+				<Option working_dir="/Users/sklepper/Dev/fractol/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/sklepper/dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sklepper/dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sklepper/dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sklepper/dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/sklepper/Dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sklepper/Dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sklepper/Dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sklepper/Dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/sklepper/dev/fractol/cmake-build-debug"/>
+				<Option working_dir="/Users/sklepper/Dev/fractol/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/sklepper/dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sklepper/dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sklepper/dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sklepper/dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/sklepper/Dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sklepper/Dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sklepper/Dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sklepper/Dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="fractol">
-				<Option output="/Users/sklepper/dev/fractol/cmake-build-debug/fractol" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/sklepper/dev/fractol/cmake-build-debug"/>
+				<Option output="/Users/sklepper/Dev/fractol/cmake-build-debug/fractol" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/sklepper/Dev/fractol/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -53,15 +53,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/sklepper/dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 fractol"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sklepper/dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sklepper/dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sklepper/dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/sklepper/Dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 fractol"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sklepper/Dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sklepper/Dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sklepper/Dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="fractol/fast">
-				<Option output="/Users/sklepper/dev/fractol/cmake-build-debug/fractol" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/sklepper/dev/fractol/cmake-build-debug"/>
+				<Option output="/Users/sklepper/Dev/fractol/cmake-build-debug/fractol" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/sklepper/Dev/fractol/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -75,32 +75,35 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/Users/sklepper/dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 fractol/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sklepper/dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sklepper/dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sklepper/dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/sklepper/Dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 fractol/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/sklepper/Dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/sklepper/Dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/sklepper/Dev/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/sklepper/dev/fractol/argument.c">
+		<Unit filename="/Users/sklepper/Dev/fractol/argument.c">
 			<Option target="fractol"/>
 		</Unit>
-		<Unit filename="/Users/sklepper/dev/fractol/display.c">
+		<Unit filename="/Users/sklepper/Dev/fractol/display.c">
 			<Option target="fractol"/>
 		</Unit>
-		<Unit filename="/Users/sklepper/dev/fractol/draw.c">
+		<Unit filename="/Users/sklepper/Dev/fractol/draw.c">
 			<Option target="fractol"/>
 		</Unit>
-		<Unit filename="/Users/sklepper/dev/fractol/event.c">
+		<Unit filename="/Users/sklepper/Dev/fractol/event.c">
 			<Option target="fractol"/>
 		</Unit>
-		<Unit filename="/Users/sklepper/dev/fractol/main.c">
+		<Unit filename="/Users/sklepper/Dev/fractol/main.c">
 			<Option target="fractol"/>
 		</Unit>
-		<Unit filename="/Users/sklepper/dev/fractol/mandelbrot.c">
+		<Unit filename="/Users/sklepper/Dev/fractol/mandelbrot.c">
 			<Option target="fractol"/>
 		</Unit>
-		<Unit filename="/Users/sklepper/dev/fractol/CMakeLists.txt">
+		<Unit filename="/Users/sklepper/Dev/fractol/zoom.c">
+			<Option target="fractol"/>
+		</Unit>
+		<Unit filename="/Users/sklepper/Dev/fractol/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
