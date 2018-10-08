@@ -6,7 +6,7 @@
 /*   By: sklepper <sklepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/11 10:45:18 by sklepper          #+#    #+#             */
-/*   Updated: 2018/10/03 13:49:00 by sklepper         ###   ########.fr       */
+/*   Updated: 2018/10/08 14:48:08 by sklepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,14 +37,18 @@ typedef struct	s_mlx
 	int			b;
 	double		zoom;
 	double		x_min;
-	double		x_mid;
 	double		x_max;
 	double		x_inc;
 	double		y_min;
-	double		y_mid;
 	double		y_max;
 	double		y_inc;
 }				t_mlx;
+
+typedef struct	s_mouse
+{
+	int			mouse_last_x;
+	int			mouse_last_y;
+}				t_mouse;
 
 typedef struct	s_data
 {

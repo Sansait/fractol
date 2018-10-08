@@ -6,7 +6,7 @@
 /*   By: sklepper <sklepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/14 09:56:52 by sklepper          #+#    #+#             */
-/*   Updated: 2018/10/08 13:44:55 by sklepper         ###   ########.fr       */
+/*   Updated: 2018/10/08 13:58:54 by sklepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,6 @@ int		init(t_data *d, char *av)
 	d->mlx->y_max = HEIGHT;
 	d->mlx->x_inc = (d->mlx->x_max - d->mlx->x_min) / WIDTH;
 	d->mlx->y_inc = (d->mlx->y_max - d->mlx->y_min) / HEIGHT;
-	d->mlx->x_mid = ((double)WIDTH / 2) * d->mlx->x_inc;
-	d->mlx->y_mid = ((double)HEIGHT / 2) * d->mlx->y_inc;
 	return (1);
 }
 
