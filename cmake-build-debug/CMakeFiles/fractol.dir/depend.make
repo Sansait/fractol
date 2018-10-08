@@ -17,6 +17,10 @@ CMakeFiles/fractol.dir/event.c.o: ../event.c
 CMakeFiles/fractol.dir/event.c.o: ../fractol.h
 CMakeFiles/fractol.dir/event.c.o: ../libft/includes/libft.h
 
+CMakeFiles/fractol.dir/julia.c.o: ../fractol.h
+CMakeFiles/fractol.dir/julia.c.o: ../julia.c
+CMakeFiles/fractol.dir/julia.c.o: ../libft/includes/libft.h
+
 CMakeFiles/fractol.dir/main.c.o: ../fractol.h
 CMakeFiles/fractol.dir/main.c.o: ../libft/includes/libft.h
 CMakeFiles/fractol.dir/main.c.o: ../main.c

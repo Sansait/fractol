@@ -6,7 +6,7 @@
 /*   By: sklepper <sklepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/14 09:56:52 by sklepper          #+#    #+#             */
-/*   Updated: 2018/10/08 13:58:54 by sklepper         ###   ########.fr       */
+/*   Updated: 2018/10/08 16:21:34 by sklepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,12 @@ int		init(t_data *d, char *av)
 	d->av = ft_strdup(av);
 	if (!(d->mlx = malloc(sizeof(t_mlx))))
 		return (0);
+	d->julia = 0;
 	d->mlx->zoom = 1;
 	d->mlx->i_max = 100;
-	d->mlx->r = 10;
+	d->mlx->r = 20;
 	d->mlx->g = 10;
-	d->mlx->b = 10;
+	d->mlx->b = 5;
 	d->mlx->x_min = 0;
 	d->mlx->x_max = WIDTH;
 	d->mlx->y_min = 0;
@@ -54,6 +55,7 @@ int main(int ac, char **av)
 	mlx_do_key_autorepeaton(d->mlx->m_ptr);
 	mlx_hook(d->mlx->w_ptr, 2, osef, key_press, d);
 	mlx_hook(d->mlx->w_ptr, 4, osef, mouse_press, d);
+	mlx_hook(d->mlx->w_ptr, 6, osef, mouse_move, d);
 	mlx_loop(d->mlx->m_ptr);
 	return (0);
 }

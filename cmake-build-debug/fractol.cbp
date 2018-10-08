@@ -94,6 +94,9 @@
 		<Unit filename="/Users/sklepper/Dev/fractol/event.c">
 			<Option target="fractol"/>
 		</Unit>
+		<Unit filename="/Users/sklepper/Dev/fractol/julia.c">
+			<Option target="fractol"/>
+		</Unit>
 		<Unit filename="/Users/sklepper/Dev/fractol/main.c">
 			<Option target="fractol"/>
 		</Unit>

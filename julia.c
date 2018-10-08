@@ -1,39 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   mandelbrot.c                                       :+:      :+:    :+:   */
+/*   julia.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sklepper <sklepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/09/14 11:41:23 by sklepper          #+#    #+#             */
-/*   Updated: 2018/10/08 16:10:00 by sklepper         ###   ########.fr       */
+/*   Created: 2018/10/08 15:25:06 by sklepper          #+#    #+#             */
+/*   Updated: 2018/10/08 16:44:17 by sklepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fractol.h"
 
-int		mandelbrot(double x, double y, t_mlx *mlx)
+int		julia(double x, double y, t_mlx *mlx)
 {
 	double dx;
 	double dx_tmp;
 	double dy;
 	int i;
 
-	dx = 0;
-	dy = 0;
+	dx = x;
+	dy = y;
 	i = 0;
 	while (dx * dx + dy * dy < 4 && i < mlx->i_max)
 	{
-		dx_tmp = dx * dx - dy * dy + x;
-		dy = 2 * dx * dy + y;
+		dx_tmp = dx * dx - dy * dy + mlx->c_x;
+		dy = 2 * dx * dy + mlx->c_y;
 		dx = dx_tmp;
 		i++;
 	}
 	return((255 - ((i * mlx->r) % 255)) << 16) +
-		((255 - ((i * mlx->g) % 255)) << 8) + (255 - ((i * mlx->b) % 255));
+	((255 - ((i * mlx->g) % 255)) << 8) + (255 - ((i * mlx->b) % 255));
 }
 
-void	draw_mandelbrot(t_mlx *mlx)
+void	draw_julia(t_mlx *mlx)
 {
 	double	dx;
 	double	dy;
@@ -53,7 +53,7 @@ void	draw_mandelbrot(t_mlx *mlx)
 		{
 			c_re = (dx - WIDTH / 2.0) * 4.0 / WIDTH;
 			c_im = (dy - HEIGHT / 2.0) * 4.0 / WIDTH;
-			mlx->img[y * WIDTH + x] = mandelbrot(c_re, c_im, mlx);
+			mlx->img[y * WIDTH + x] = julia(c_re, c_im, mlx);
 			x++;
 			dx += mlx->x_inc;
 		}

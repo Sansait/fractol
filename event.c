@@ -6,7 +6,7 @@
 /*   By: sklepper <sklepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/14 10:29:53 by sklepper          #+#    #+#             */
-/*   Updated: 2018/10/08 14:48:14 by sklepper         ###   ########.fr       */
+/*   Updated: 2018/10/08 16:40:44 by sklepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ int			key_press(int key, t_data *d)
 		d->mlx->i_max += 10;
 	if (key == KEY_MINUS && d->mlx->i_max > 10)
 		d->mlx->i_max -= 10;
+	if (key == KEY_SPACE)
+		d->julia_p = (d->julia_p == 0) ? 1 : 0;
 	centraldisp(d);
 	return (0);
 }
@@ -38,55 +40,16 @@ int			mouse_press(int b, int x, int y, t_data *d)
 		zoom(x, y, d, -1);
 		centraldisp(d);
 	}
-//	if (b == 1)
-//	{
-//		d->click_g = 1;
-//		d->mouse_last_x = x;
-//		d->mouse_last_y = y;
-//	}
-//	if (b == 2)
-//	{
-//		d->click_d = 1;
-//		d->mouse_last_x = x;
-//		d->mouse_last_y = y;
-//	}
 	return (0);
 }
 
-//int			mouse_release(int b, int x, int y, t_data *d)
-//{
-//	(void)x;
-//	(void)y;
-//	if (b == 1)
-//		d->click_g = 0;
-//	if (b == 2)
-//		d->click_d = 0;
-//	return (0);
-//}
-
-//int			mouse_move(int x, int y, t_data *d)
-//{
-//	float	dx;
-//	float	dy;
-//
-//	if (d->click_d == 1 || d->click_g == 1)
-//	{
-//		dx = d->mouse_last_x - x;
-//		dy = d->mouse_last_y - y;
-//		d->mouse_last_y = y;
-//		d->mouse_last_x = x;
-//	}
-//	if (d->click_d == 1)
-//	{
-//		d->mlx->x_min += dx / 1000;
-//		d->mlx->x_max += dx / 1000;
-//		centraldisp(d);
-//	}
-//	if (d->click_g == 1)
-//	{
-//		d->mid.y -= dy;
-//		d->mid.x -= dx;
-//		centraldisp(d);
-//	}
-//	return (0);
-//}
+int			mouse_move(int x, int y, t_data *d)
+{
+	if (d->julia == 1 && d->julia_p == 1)
+	{
+		d->mlx->c_x = (x - WIDTH / 2.0) * 4.0 / WIDTH;
+		d->mlx->c_y = (y - HEIGHT / 2.0) * 4.0 / WIDTH;
+		centraldisp(d);
+	}
+	return (0);
+}

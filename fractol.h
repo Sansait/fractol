@@ -6,7 +6,7 @@
 /*   By: sklepper <sklepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/11 10:45:18 by sklepper          #+#    #+#             */
-/*   Updated: 2018/10/08 14:48:08 by sklepper         ###   ########.fr       */
+/*   Updated: 2018/10/08 16:42:11 by sklepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,12 @@
 # include "mlx.h"
 # include "libft/includes/libft.h"
 
-# define WIDTH		800
-# define HEIGHT		600
+# define WIDTH		1600
+# define HEIGHT		1200
 # define KEY_ESC	53
 # define KEY_PLUS	69
 # define KEY_MINUS	78
+# define KEY_SPACE	49
 
 # define SCROLL_UP		4
 # define SCROLL_DOWN	5
@@ -35,6 +36,8 @@ typedef struct	s_mlx
 	int			r;
 	int			g;
 	int			b;
+	double		c_x;
+	double		c_y;
 	double		zoom;
 	double		x_min;
 	double		x_max;
@@ -55,14 +58,18 @@ typedef struct	s_data
 	t_mlx		*mlx;
 	char		*av;
 	void		(*f_fractol)(t_mlx*);
+	int			julia;
+	int			julia_p;
 }				t_data;
 
 //typedef struct s_data	t_data;
 
 int			key_press(int key, t_data *data);
 int			mouse_press(int b, int x, int y, t_data *data);
+int			mouse_move(int x, int y, t_data *d);
 void		centraldisp(t_data *data);
 void		draw_mandelbrot(t_mlx *mlx);
+void		draw_julia(t_mlx *mlx);
 void		w_fractal(t_data *d);
 int			zoom(int x, int y, t_data *d, int zoom);
 

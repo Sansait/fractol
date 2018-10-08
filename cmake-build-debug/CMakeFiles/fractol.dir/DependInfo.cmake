@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/sklepper/Dev/fractol/display.c" "/Users/sklepper/Dev/fractol/cmake-build-debug/CMakeFiles/fractol.dir/display.c.o"
   "/Users/sklepper/Dev/fractol/draw.c" "/Users/sklepper/Dev/fractol/cmake-build-debug/CMakeFiles/fractol.dir/draw.c.o"
   "/Users/sklepper/Dev/fractol/event.c" "/Users/sklepper/Dev/fractol/cmake-build-debug/CMakeFiles/fractol.dir/event.c.o"
+  "/Users/sklepper/Dev/fractol/julia.c" "/Users/sklepper/Dev/fractol/cmake-build-debug/CMakeFiles/fractol.dir/julia.c.o"
   "/Users/sklepper/Dev/fractol/main.c" "/Users/sklepper/Dev/fractol/cmake-build-debug/CMakeFiles/fractol.dir/main.c.o"
   "/Users/sklepper/Dev/fractol/mandelbrot.c" "/Users/sklepper/Dev/fractol/cmake-build-debug/CMakeFiles/fractol.dir/mandelbrot.c.o"
   "/Users/sklepper/Dev/fractol/zoom.c" "/Users/sklepper/Dev/fractol/cmake-build-debug/CMakeFiles/fractol.dir/zoom.c.o"

@@ -231,6 +231,33 @@ event.c.s:
 	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/event.c.s
 .PHONY : event.c.s
 
+julia.o: julia.c.o
+
+.PHONY : julia.o
+
+# target to build an object file
+julia.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/julia.c.o
+.PHONY : julia.c.o
+
+julia.i: julia.c.i
+
+.PHONY : julia.i
+
+# target to preprocess a source file
+julia.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/julia.c.i
+.PHONY : julia.c.i
+
+julia.s: julia.c.s
+
+.PHONY : julia.s
+
+# target to generate assembly for a file
+julia.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/julia.c.s
+.PHONY : julia.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -333,6 +360,9 @@ help:
 	@echo "... event.o"
 	@echo "... event.i"
 	@echo "... event.s"
+	@echo "... julia.o"
+	@echo "... julia.i"
+	@echo "... julia.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
