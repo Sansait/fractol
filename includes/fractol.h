@@ -6,7 +6,7 @@
 /*   By: sklepper <sklepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/11 10:45:18 by sklepper          #+#    #+#             */
-/*   Updated: 2018/10/08 16:42:11 by sklepper         ###   ########.fr       */
+/*   Updated: 2018/10/09 11:57:09 by sklepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 # include <math.h>
 # include "mlx.h"
-# include "libft/includes/libft.h"
+# include "../libft/includes/libft.h"
 
 # define WIDTH		1600
 # define HEIGHT		1200
@@ -22,6 +22,7 @@
 # define KEY_PLUS	69
 # define KEY_MINUS	78
 # define KEY_SPACE	49
+# define KEY_R		15
 
 # define SCROLL_UP		4
 # define SCROLL_DOWN	5
@@ -46,6 +47,12 @@ typedef struct	s_mlx
 	double		y_max;
 	double		y_inc;
 }				t_mlx;
+
+typedef struct	s_double
+{
+	double x;
+	double y;
+}				t_double;
 
 typedef struct	s_mouse
 {
@@ -72,6 +79,8 @@ void		draw_mandelbrot(t_mlx *mlx);
 void		draw_julia(t_mlx *mlx);
 void		w_fractal(t_data *d);
 int			zoom(int x, int y, t_data *d, int zoom);
+void		reset(t_data *d);
+
 
 
 

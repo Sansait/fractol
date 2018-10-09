@@ -6,11 +6,11 @@
 /*   By: sklepper <sklepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/14 09:56:52 by sklepper          #+#    #+#             */
-/*   Updated: 2018/10/08 16:21:34 by sklepper         ###   ########.fr       */
+/*   Updated: 2018/10/09 11:42:20 by sklepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol.h"
+#include "../includes/fractol.h"
 
 int		init(t_data *d, char *av)
 {
@@ -32,7 +32,7 @@ int		init(t_data *d, char *av)
 	return (1);
 }
 
-int main(int ac, char **av)
+int		main(int ac, char **av)
 {
 	t_data		*d;
 	int			osef;

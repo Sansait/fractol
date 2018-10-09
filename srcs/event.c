@@ -6,11 +6,11 @@
 /*   By: sklepper <sklepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/14 10:29:53 by sklepper          #+#    #+#             */
-/*   Updated: 2018/10/08 16:40:44 by sklepper         ###   ########.fr       */
+/*   Updated: 2018/10/09 11:57:09 by sklepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol.h"
+#include "../includes/fractol.h"
 
 int			key_press(int key, t_data *d)
 {
@@ -23,6 +23,8 @@ int			key_press(int key, t_data *d)
 		d->mlx->i_max -= 10;
 	if (key == KEY_SPACE)
 		d->julia_p = (d->julia_p == 0) ? 1 : 0;
+	if (key == KEY_R)
+		reset(d);
 	centraldisp(d);
 	return (0);
 }

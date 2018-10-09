@@ -6,17 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/sklepper/Dev/fractol/fractol.h
+/Users/sklepper/Dev/fractol/includes/fractol.h
 math.h
 -
 mlx.h
-/Users/sklepper/Dev/fractol/mlx.h
-libft/includes/libft.h
+/Users/sklepper/Dev/fractol/includes/mlx.h
+../libft/includes/libft.h
 /Users/sklepper/Dev/fractol/libft/includes/libft.h
-
-/Users/sklepper/Dev/fractol/julia.c
-fractol.h
-/Users/sklepper/Dev/fractol/fractol.h
 
 /Users/sklepper/Dev/fractol/libft/includes/libft.h
 unistd.h
@@ -24,7 +20,31 @@ unistd.h
 stdlib.h
 -
 
-/Users/sklepper/Dev/fractol/mandelbrot.c
-fractol.h
-/Users/sklepper/Dev/fractol/fractol.h
+/Users/sklepper/Dev/fractol/srcs/argument.c
+../includes/fractol.h
+/Users/sklepper/Dev/fractol/includes/fractol.h
+
+/Users/sklepper/Dev/fractol/srcs/display.c
+../includes/fractol.h
+/Users/sklepper/Dev/fractol/includes/fractol.h
+
+/Users/sklepper/Dev/fractol/srcs/event.c
+../includes/fractol.h
+/Users/sklepper/Dev/fractol/includes/fractol.h
+
+/Users/sklepper/Dev/fractol/srcs/julia.c
+../includes/fractol.h
+/Users/sklepper/Dev/fractol/includes/fractol.h
+
+/Users/sklepper/Dev/fractol/srcs/main.c
+../includes/fractol.h
+/Users/sklepper/Dev/fractol/includes/fractol.h
+
+/Users/sklepper/Dev/fractol/srcs/mandelbrot.c
+../includes/fractol.h
+/Users/sklepper/Dev/fractol/includes/fractol.h
+
+/Users/sklepper/Dev/fractol/srcs/zoom.c
+../includes/fractol.h
+/Users/sklepper/Dev/fractol/includes/fractol.h
 

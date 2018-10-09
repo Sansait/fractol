@@ -123,221 +123,194 @@ fractol/fast:
 	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/build
 .PHONY : fractol/fast
 
-argument.o: argument.c.o
+srcs/argument.o: srcs/argument.c.o
 
-.PHONY : argument.o
-
-# target to build an object file
-argument.c.o:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/argument.c.o
-.PHONY : argument.c.o
-
-argument.i: argument.c.i
-
-.PHONY : argument.i
-
-# target to preprocess a source file
-argument.c.i:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/argument.c.i
-.PHONY : argument.c.i
-
-argument.s: argument.c.s
-
-.PHONY : argument.s
-
-# target to generate assembly for a file
-argument.c.s:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/argument.c.s
-.PHONY : argument.c.s
-
-display.o: display.c.o
-
-.PHONY : display.o
+.PHONY : srcs/argument.o
 
 # target to build an object file
-display.c.o:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/display.c.o
-.PHONY : display.c.o
+srcs/argument.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/argument.c.o
+.PHONY : srcs/argument.c.o
 
-display.i: display.c.i
+srcs/argument.i: srcs/argument.c.i
 
-.PHONY : display.i
+.PHONY : srcs/argument.i
 
 # target to preprocess a source file
-display.c.i:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/display.c.i
-.PHONY : display.c.i
+srcs/argument.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/argument.c.i
+.PHONY : srcs/argument.c.i
 
-display.s: display.c.s
+srcs/argument.s: srcs/argument.c.s
 
-.PHONY : display.s
+.PHONY : srcs/argument.s
 
 # target to generate assembly for a file
-display.c.s:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/display.c.s
-.PHONY : display.c.s
+srcs/argument.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/argument.c.s
+.PHONY : srcs/argument.c.s
 
-draw.o: draw.c.o
+srcs/display.o: srcs/display.c.o
 
-.PHONY : draw.o
+.PHONY : srcs/display.o
 
 # target to build an object file
-draw.c.o:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/draw.c.o
-.PHONY : draw.c.o
+srcs/display.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/display.c.o
+.PHONY : srcs/display.c.o
 
-draw.i: draw.c.i
+srcs/display.i: srcs/display.c.i
 
-.PHONY : draw.i
+.PHONY : srcs/display.i
 
 # target to preprocess a source file
-draw.c.i:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/draw.c.i
-.PHONY : draw.c.i
+srcs/display.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/display.c.i
+.PHONY : srcs/display.c.i
 
-draw.s: draw.c.s
+srcs/display.s: srcs/display.c.s
 
-.PHONY : draw.s
+.PHONY : srcs/display.s
 
 # target to generate assembly for a file
-draw.c.s:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/draw.c.s
-.PHONY : draw.c.s
+srcs/display.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/display.c.s
+.PHONY : srcs/display.c.s
 
-event.o: event.c.o
+srcs/event.o: srcs/event.c.o
 
-.PHONY : event.o
+.PHONY : srcs/event.o
 
 # target to build an object file
-event.c.o:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/event.c.o
-.PHONY : event.c.o
+srcs/event.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/event.c.o
+.PHONY : srcs/event.c.o
 
-event.i: event.c.i
+srcs/event.i: srcs/event.c.i
 
-.PHONY : event.i
+.PHONY : srcs/event.i
 
 # target to preprocess a source file
-event.c.i:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/event.c.i
-.PHONY : event.c.i
+srcs/event.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/event.c.i
+.PHONY : srcs/event.c.i
 
-event.s: event.c.s
+srcs/event.s: srcs/event.c.s
 
-.PHONY : event.s
+.PHONY : srcs/event.s
 
 # target to generate assembly for a file
-event.c.s:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/event.c.s
-.PHONY : event.c.s
+srcs/event.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/event.c.s
+.PHONY : srcs/event.c.s
 
-julia.o: julia.c.o
+srcs/julia.o: srcs/julia.c.o
 
-.PHONY : julia.o
+.PHONY : srcs/julia.o
 
 # target to build an object file
-julia.c.o:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/julia.c.o
-.PHONY : julia.c.o
+srcs/julia.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/julia.c.o
+.PHONY : srcs/julia.c.o
 
-julia.i: julia.c.i
+srcs/julia.i: srcs/julia.c.i
 
-.PHONY : julia.i
+.PHONY : srcs/julia.i
 
 # target to preprocess a source file
-julia.c.i:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/julia.c.i
-.PHONY : julia.c.i
+srcs/julia.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/julia.c.i
+.PHONY : srcs/julia.c.i
 
-julia.s: julia.c.s
+srcs/julia.s: srcs/julia.c.s
 
-.PHONY : julia.s
+.PHONY : srcs/julia.s
 
 # target to generate assembly for a file
-julia.c.s:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/julia.c.s
-.PHONY : julia.c.s
+srcs/julia.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/julia.c.s
+.PHONY : srcs/julia.c.s
 
-main.o: main.c.o
+srcs/main.o: srcs/main.c.o
 
-.PHONY : main.o
+.PHONY : srcs/main.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/main.c.o
-.PHONY : main.c.o
+srcs/main.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/main.c.o
+.PHONY : srcs/main.c.o
 
-main.i: main.c.i
+srcs/main.i: srcs/main.c.i
 
-.PHONY : main.i
+.PHONY : srcs/main.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/main.c.i
-.PHONY : main.c.i
+srcs/main.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/main.c.i
+.PHONY : srcs/main.c.i
 
-main.s: main.c.s
+srcs/main.s: srcs/main.c.s
 
-.PHONY : main.s
+.PHONY : srcs/main.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/main.c.s
-.PHONY : main.c.s
+srcs/main.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/main.c.s
+.PHONY : srcs/main.c.s
 
-mandelbrot.o: mandelbrot.c.o
+srcs/mandelbrot.o: srcs/mandelbrot.c.o
 
-.PHONY : mandelbrot.o
+.PHONY : srcs/mandelbrot.o
 
 # target to build an object file
-mandelbrot.c.o:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/mandelbrot.c.o
-.PHONY : mandelbrot.c.o
+srcs/mandelbrot.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/mandelbrot.c.o
+.PHONY : srcs/mandelbrot.c.o
 
-mandelbrot.i: mandelbrot.c.i
+srcs/mandelbrot.i: srcs/mandelbrot.c.i
 
-.PHONY : mandelbrot.i
+.PHONY : srcs/mandelbrot.i
 
 # target to preprocess a source file
-mandelbrot.c.i:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/mandelbrot.c.i
-.PHONY : mandelbrot.c.i
+srcs/mandelbrot.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/mandelbrot.c.i
+.PHONY : srcs/mandelbrot.c.i
 
-mandelbrot.s: mandelbrot.c.s
+srcs/mandelbrot.s: srcs/mandelbrot.c.s
 
-.PHONY : mandelbrot.s
+.PHONY : srcs/mandelbrot.s
 
 # target to generate assembly for a file
-mandelbrot.c.s:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/mandelbrot.c.s
-.PHONY : mandelbrot.c.s
+srcs/mandelbrot.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/mandelbrot.c.s
+.PHONY : srcs/mandelbrot.c.s
 
-zoom.o: zoom.c.o
+srcs/zoom.o: srcs/zoom.c.o
 
-.PHONY : zoom.o
+.PHONY : srcs/zoom.o
 
 # target to build an object file
-zoom.c.o:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/zoom.c.o
-.PHONY : zoom.c.o
+srcs/zoom.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/zoom.c.o
+.PHONY : srcs/zoom.c.o
 
-zoom.i: zoom.c.i
+srcs/zoom.i: srcs/zoom.c.i
 
-.PHONY : zoom.i
+.PHONY : srcs/zoom.i
 
 # target to preprocess a source file
-zoom.c.i:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/zoom.c.i
-.PHONY : zoom.c.i
+srcs/zoom.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/zoom.c.i
+.PHONY : srcs/zoom.c.i
 
-zoom.s: zoom.c.s
+srcs/zoom.s: srcs/zoom.c.s
 
-.PHONY : zoom.s
+.PHONY : srcs/zoom.s
 
 # target to generate assembly for a file
-zoom.c.s:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/zoom.c.s
-.PHONY : zoom.c.s
+srcs/zoom.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/zoom.c.s
+.PHONY : srcs/zoom.c.s
 
 # Help Target
 help:
@@ -348,30 +321,27 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... fractol"
-	@echo "... argument.o"
-	@echo "... argument.i"
-	@echo "... argument.s"
-	@echo "... display.o"
-	@echo "... display.i"
-	@echo "... display.s"
-	@echo "... draw.o"
-	@echo "... draw.i"
-	@echo "... draw.s"
-	@echo "... event.o"
-	@echo "... event.i"
-	@echo "... event.s"
-	@echo "... julia.o"
-	@echo "... julia.i"
-	@echo "... julia.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
-	@echo "... mandelbrot.o"
-	@echo "... mandelbrot.i"
-	@echo "... mandelbrot.s"
-	@echo "... zoom.o"
-	@echo "... zoom.i"
-	@echo "... zoom.s"
+	@echo "... srcs/argument.o"
+	@echo "... srcs/argument.i"
+	@echo "... srcs/argument.s"
+	@echo "... srcs/display.o"
+	@echo "... srcs/display.i"
+	@echo "... srcs/display.s"
+	@echo "... srcs/event.o"
+	@echo "... srcs/event.i"
+	@echo "... srcs/event.s"
+	@echo "... srcs/julia.o"
+	@echo "... srcs/julia.i"
+	@echo "... srcs/julia.s"
+	@echo "... srcs/main.o"
+	@echo "... srcs/main.i"
+	@echo "... srcs/main.s"
+	@echo "... srcs/mandelbrot.o"
+	@echo "... srcs/mandelbrot.i"
+	@echo "... srcs/mandelbrot.s"
+	@echo "... srcs/zoom.o"
+	@echo "... srcs/zoom.i"
+	@echo "... srcs/zoom.s"
 .PHONY : help
 
 

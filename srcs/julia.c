@@ -6,18 +6,18 @@
 /*   By: sklepper <sklepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/08 15:25:06 by sklepper          #+#    #+#             */
-/*   Updated: 2018/10/08 16:44:17 by sklepper         ###   ########.fr       */
+/*   Updated: 2018/10/09 11:41:00 by sklepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fractol.h"
+#include "../includes/fractol.h"
 
 int		julia(double x, double y, t_mlx *mlx)
 {
-	double dx;
-	double dx_tmp;
-	double dy;
-	int i;
+	double	dx;
+	double	dx_tmp;
+	double	dy;
+	int		i;
 
 	dx = x;
 	dy = y;
@@ -29,35 +29,32 @@ int		julia(double x, double y, t_mlx *mlx)
 		dx = dx_tmp;
 		i++;
 	}
-	return((255 - ((i * mlx->r) % 255)) << 16) +
+	return ((255 - ((i * mlx->r) % 255)) << 16) +
 	((255 - ((i * mlx->g) % 255)) << 8) + (255 - ((i * mlx->b) % 255));
 }
 
 void	draw_julia(t_mlx *mlx)
 {
-	double	dx;
-	double	dy;
-	int		x;
-	int		y;
-	double	c_re;
-	double	c_im;
+	t_double	d;
+	t_double	c;
+	int			x;
+	int			y;
 
-
-	dy = mlx->y_min;
+	d.y = mlx->y_min;
 	y = 0;
 	while (y < HEIGHT)
 	{
 		x = 0;
-		dx = mlx->x_min;
+		d.x = mlx->x_min;
 		while (x < WIDTH)
 		{
-			c_re = (dx - WIDTH / 2.0) * 4.0 / WIDTH;
-			c_im = (dy - HEIGHT / 2.0) * 4.0 / WIDTH;
-			mlx->img[y * WIDTH + x] = julia(c_re, c_im, mlx);
+			c.x = (d.x - WIDTH / 2.0) * 4.0 / WIDTH;
+			c.y = (d.y - HEIGHT / 2.0) * 4.0 / WIDTH;
+			mlx->img[y * WIDTH + x] = julia(c.x, c.y, mlx);
 			x++;
-			dx += mlx->x_inc;
+			d.x += mlx->x_inc;
 		}
 		y++;
-		dy += mlx->y_inc;
+		d.y += mlx->y_inc;
 	}
 }
