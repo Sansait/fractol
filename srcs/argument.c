@@ -23,7 +23,11 @@ void	w_fractal(t_data *d)
 		d->julia_p = 1;
 	}
 	else if (ft_strcmp(d->av, "ship") == 0)
+	{
 		d->f_fractol = &draw_ship;
+		d->mlx->y_min -= d->mlx->y_inc * 100;
+		d->mlx->y_max -= d->mlx->y_inc * 100;
+	}
 	else
 	{
 		ft_putendl("usage");
