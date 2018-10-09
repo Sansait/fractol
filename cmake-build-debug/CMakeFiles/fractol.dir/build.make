@@ -122,18 +122,18 @@ CMakeFiles/fractol.dir/srcs/argument.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractol.dir/srcs/argument.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sklepper/Dev/fractol/srcs/argument.c -o CMakeFiles/fractol.dir/srcs/argument.c.s
 
-CMakeFiles/fractol.dir/srcs/zoom.c.o: CMakeFiles/fractol.dir/flags.make
-CMakeFiles/fractol.dir/srcs/zoom.c.o: ../srcs/zoom.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sklepper/Dev/fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/fractol.dir/srcs/zoom.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractol.dir/srcs/zoom.c.o   -c /Users/sklepper/Dev/fractol/srcs/zoom.c
+CMakeFiles/fractol.dir/srcs/movement.c.o: CMakeFiles/fractol.dir/flags.make
+CMakeFiles/fractol.dir/srcs/movement.c.o: ../srcs/movement.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sklepper/Dev/fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/fractol.dir/srcs/movement.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractol.dir/srcs/movement.c.o   -c /Users/sklepper/Dev/fractol/srcs/movement.c
 
-CMakeFiles/fractol.dir/srcs/zoom.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractol.dir/srcs/zoom.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/sklepper/Dev/fractol/srcs/zoom.c > CMakeFiles/fractol.dir/srcs/zoom.c.i
+CMakeFiles/fractol.dir/srcs/movement.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractol.dir/srcs/movement.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/sklepper/Dev/fractol/srcs/movement.c > CMakeFiles/fractol.dir/srcs/movement.c.i
 
-CMakeFiles/fractol.dir/srcs/zoom.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractol.dir/srcs/zoom.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sklepper/Dev/fractol/srcs/zoom.c -o CMakeFiles/fractol.dir/srcs/zoom.c.s
+CMakeFiles/fractol.dir/srcs/movement.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractol.dir/srcs/movement.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sklepper/Dev/fractol/srcs/movement.c -o CMakeFiles/fractol.dir/srcs/movement.c.s
 
 CMakeFiles/fractol.dir/srcs/julia.c.o: CMakeFiles/fractol.dir/flags.make
 CMakeFiles/fractol.dir/srcs/julia.c.o: ../srcs/julia.c
@@ -148,6 +148,19 @@ CMakeFiles/fractol.dir/srcs/julia.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractol.dir/srcs/julia.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sklepper/Dev/fractol/srcs/julia.c -o CMakeFiles/fractol.dir/srcs/julia.c.s
 
+CMakeFiles/fractol.dir/srcs/burning_ship.c.o: CMakeFiles/fractol.dir/flags.make
+CMakeFiles/fractol.dir/srcs/burning_ship.c.o: ../srcs/burning_ship.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sklepper/Dev/fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/fractol.dir/srcs/burning_ship.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractol.dir/srcs/burning_ship.c.o   -c /Users/sklepper/Dev/fractol/srcs/burning_ship.c
+
+CMakeFiles/fractol.dir/srcs/burning_ship.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractol.dir/srcs/burning_ship.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/sklepper/Dev/fractol/srcs/burning_ship.c > CMakeFiles/fractol.dir/srcs/burning_ship.c.i
+
+CMakeFiles/fractol.dir/srcs/burning_ship.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractol.dir/srcs/burning_ship.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sklepper/Dev/fractol/srcs/burning_ship.c -o CMakeFiles/fractol.dir/srcs/burning_ship.c.s
+
 # Object files for target fractol
 fractol_OBJECTS = \
 "CMakeFiles/fractol.dir/srcs/main.c.o" \
@@ -155,8 +168,9 @@ fractol_OBJECTS = \
 "CMakeFiles/fractol.dir/srcs/mandelbrot.c.o" \
 "CMakeFiles/fractol.dir/srcs/display.c.o" \
 "CMakeFiles/fractol.dir/srcs/argument.c.o" \
-"CMakeFiles/fractol.dir/srcs/zoom.c.o" \
-"CMakeFiles/fractol.dir/srcs/julia.c.o"
+"CMakeFiles/fractol.dir/srcs/movement.c.o" \
+"CMakeFiles/fractol.dir/srcs/julia.c.o" \
+"CMakeFiles/fractol.dir/srcs/burning_ship.c.o"
 
 # External object files for target fractol
 fractol_EXTERNAL_OBJECTS =
@@ -166,13 +180,14 @@ fractol: CMakeFiles/fractol.dir/srcs/event.c.o
 fractol: CMakeFiles/fractol.dir/srcs/mandelbrot.c.o
 fractol: CMakeFiles/fractol.dir/srcs/display.c.o
 fractol: CMakeFiles/fractol.dir/srcs/argument.c.o
-fractol: CMakeFiles/fractol.dir/srcs/zoom.c.o
+fractol: CMakeFiles/fractol.dir/srcs/movement.c.o
 fractol: CMakeFiles/fractol.dir/srcs/julia.c.o
+fractol: CMakeFiles/fractol.dir/srcs/burning_ship.c.o
 fractol: CMakeFiles/fractol.dir/build.make
 fractol: /usr/local/lib/libmlx.a
 fractol: ../libft/libft.a
 fractol: CMakeFiles/fractol.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/sklepper/Dev/fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable fractol"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/sklepper/Dev/fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking C executable fractol"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fractol.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

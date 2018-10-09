@@ -5,6 +5,10 @@ CMakeFiles/fractol.dir/srcs/argument.c.o: ../includes/fractol.h
 CMakeFiles/fractol.dir/srcs/argument.c.o: ../libft/includes/libft.h
 CMakeFiles/fractol.dir/srcs/argument.c.o: ../srcs/argument.c
 
+CMakeFiles/fractol.dir/srcs/burning_ship.c.o: ../includes/fractol.h
+CMakeFiles/fractol.dir/srcs/burning_ship.c.o: ../libft/includes/libft.h
+CMakeFiles/fractol.dir/srcs/burning_ship.c.o: ../srcs/burning_ship.c
+
 CMakeFiles/fractol.dir/srcs/display.c.o: ../includes/fractol.h
 CMakeFiles/fractol.dir/srcs/display.c.o: ../libft/includes/libft.h
 CMakeFiles/fractol.dir/srcs/display.c.o: ../srcs/display.c
@@ -25,7 +29,7 @@ CMakeFiles/fractol.dir/srcs/mandelbrot.c.o: ../includes/fractol.h
 CMakeFiles/fractol.dir/srcs/mandelbrot.c.o: ../libft/includes/libft.h
 CMakeFiles/fractol.dir/srcs/mandelbrot.c.o: ../srcs/mandelbrot.c
 
-CMakeFiles/fractol.dir/srcs/zoom.c.o: ../includes/fractol.h
-CMakeFiles/fractol.dir/srcs/zoom.c.o: ../libft/includes/libft.h
-CMakeFiles/fractol.dir/srcs/zoom.c.o: ../srcs/zoom.c
+CMakeFiles/fractol.dir/srcs/movement.c.o: ../includes/fractol.h
+CMakeFiles/fractol.dir/srcs/movement.c.o: ../libft/includes/libft.h
+CMakeFiles/fractol.dir/srcs/movement.c.o: ../srcs/movement.c
 

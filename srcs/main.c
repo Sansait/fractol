@@ -6,7 +6,7 @@
 /*   By: sklepper <sklepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/14 09:56:52 by sklepper          #+#    #+#             */
-/*   Updated: 2018/10/09 11:42:20 by sklepper         ###   ########.fr       */
+/*   Updated: 2018/10/09 11:53:38 by sklepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@ int		init(t_data *d, char *av)
 	d->mlx->y_max = HEIGHT;
 	d->mlx->x_inc = (d->mlx->x_max - d->mlx->x_min) / WIDTH;
 	d->mlx->y_inc = (d->mlx->y_max - d->mlx->y_min) / HEIGHT;
+	d->render = 0;
 	return (1);
 }
 
@@ -56,6 +57,7 @@ int		main(int ac, char **av)
 	mlx_hook(d->mlx->w_ptr, 2, osef, key_press, d);
 	mlx_hook(d->mlx->w_ptr, 4, osef, mouse_press, d);
 	mlx_hook(d->mlx->w_ptr, 6, osef, mouse_move, d);
+	mlx_loop_hook(d->mlx->m_ptr, display, d);
 	mlx_loop(d->mlx->m_ptr);
 	return (0);
 }

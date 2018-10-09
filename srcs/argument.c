@@ -6,7 +6,7 @@
 /*   By: sklepper <sklepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/25 17:45:15 by sklepper          #+#    #+#             */
-/*   Updated: 2018/10/08 16:28:57 by sklepper         ###   ########.fr       */
+/*   Updated: 2018/10/09 14:03:47 by sklepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,11 +22,11 @@ void	w_fractal(t_data *d)
 		d->julia = 1;
 		d->julia_p = 1;
 	}
-	else if (ft_strcmp(d->av, " "))
-		return ;
+	else if (ft_strcmp(d->av, "ship") == 0)
+		d->f_fractol = &draw_ship;
 	else
 	{
 		ft_putendl("usage");
-		return ;
+		exit (0);
 	}
 }

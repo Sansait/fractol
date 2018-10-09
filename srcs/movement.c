@@ -1,16 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   zoom.c                                             :+:      :+:    :+:   */
+/*   movement.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sklepper <sklepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/03 14:18:03 by sklepper          #+#    #+#             */
-/*   Updated: 2018/10/09 11:53:38 by sklepper         ###   ########.fr       */
+/*   Updated: 2018/10/09 14:07:19 by sklepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/fractol.h"
+
+void	move(int key, t_data *d)
+{
+	if (key == KEY_UP && (d->render = 1))
+	{
+		d->mlx->y_min -= d->mlx->y_inc * 10;
+		d->mlx->y_max -= d->mlx->y_inc * 10;
+	}
+	else if (key == KEY_DOWN && (d->render = 1))
+	{
+		d->mlx->y_min += d->mlx->y_inc * 10;
+		d->mlx->y_max += d->mlx->y_inc * 10;
+	}
+	else if (key == KEY_LEFT && (d->render = 1))
+	{
+		d->mlx->x_min -= d->mlx->x_inc * 10;
+		d->mlx->x_max -= d->mlx->x_inc * 10;
+	}
+	else if (key == KEY_RIGHT && (d->render = 1))
+	{
+		d->mlx->x_min += d->mlx->x_inc * 10;
+		d->mlx->x_max += d->mlx->x_inc * 10;
+	}
+}
 
 int		zoom(int x, int y, t_data *d, int zoom)
 {

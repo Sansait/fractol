@@ -6,7 +6,7 @@
 /*   By: sklepper <sklepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/08 15:25:06 by sklepper          #+#    #+#             */
-/*   Updated: 2018/10/09 11:41:00 by sklepper         ###   ########.fr       */
+/*   Updated: 2018/10/09 13:41:57 by sklepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,8 @@ int		julia(double x, double y, t_mlx *mlx)
 		dx = dx_tmp;
 		i++;
 	}
+	if (i == mlx->i_max)
+		return (0);
 	return ((255 - ((i * mlx->r) % 255)) << 16) +
 	((255 - ((i * mlx->g) % 255)) << 8) + (255 - ((i * mlx->b) % 255));
 }

@@ -9,8 +9,8 @@ add_executable(fractol
         srcs/mandelbrot.c
         srcs/display.c
         srcs/argument.c
-        srcs/zoom.c
-        srcs/julia.c)
+        srcs/movement.c
+        srcs/julia.c srcs/burning_ship.c)
 
 target_link_libraries(fractol "/usr/local/lib/libmlx.a")
 target_link_libraries(fractol "-framework AppKit")

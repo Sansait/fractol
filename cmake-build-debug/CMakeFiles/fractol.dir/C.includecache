@@ -24,6 +24,10 @@ stdlib.h
 ../includes/fractol.h
 /Users/sklepper/Dev/fractol/includes/fractol.h
 
+/Users/sklepper/Dev/fractol/srcs/burning_ship.c
+../includes/fractol.h
+/Users/sklepper/Dev/fractol/includes/fractol.h
+
 /Users/sklepper/Dev/fractol/srcs/display.c
 ../includes/fractol.h
 /Users/sklepper/Dev/fractol/includes/fractol.h
@@ -44,7 +48,7 @@ stdlib.h
 ../includes/fractol.h
 /Users/sklepper/Dev/fractol/includes/fractol.h
 
-/Users/sklepper/Dev/fractol/srcs/zoom.c
+/Users/sklepper/Dev/fractol/srcs/movement.c
 ../includes/fractol.h
 /Users/sklepper/Dev/fractol/includes/fractol.h
 

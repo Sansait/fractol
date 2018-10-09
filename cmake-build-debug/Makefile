@@ -150,6 +150,33 @@ srcs/argument.c.s:
 	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/argument.c.s
 .PHONY : srcs/argument.c.s
 
+srcs/burning_ship.o: srcs/burning_ship.c.o
+
+.PHONY : srcs/burning_ship.o
+
+# target to build an object file
+srcs/burning_ship.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/burning_ship.c.o
+.PHONY : srcs/burning_ship.c.o
+
+srcs/burning_ship.i: srcs/burning_ship.c.i
+
+.PHONY : srcs/burning_ship.i
+
+# target to preprocess a source file
+srcs/burning_ship.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/burning_ship.c.i
+.PHONY : srcs/burning_ship.c.i
+
+srcs/burning_ship.s: srcs/burning_ship.c.s
+
+.PHONY : srcs/burning_ship.s
+
+# target to generate assembly for a file
+srcs/burning_ship.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/burning_ship.c.s
+.PHONY : srcs/burning_ship.c.s
+
 srcs/display.o: srcs/display.c.o
 
 .PHONY : srcs/display.o
@@ -285,32 +312,32 @@ srcs/mandelbrot.c.s:
 	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/mandelbrot.c.s
 .PHONY : srcs/mandelbrot.c.s
 
-srcs/zoom.o: srcs/zoom.c.o
+srcs/movement.o: srcs/movement.c.o
 
-.PHONY : srcs/zoom.o
+.PHONY : srcs/movement.o
 
 # target to build an object file
-srcs/zoom.c.o:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/zoom.c.o
-.PHONY : srcs/zoom.c.o
+srcs/movement.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/movement.c.o
+.PHONY : srcs/movement.c.o
 
-srcs/zoom.i: srcs/zoom.c.i
+srcs/movement.i: srcs/movement.c.i
 
-.PHONY : srcs/zoom.i
+.PHONY : srcs/movement.i
 
 # target to preprocess a source file
-srcs/zoom.c.i:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/zoom.c.i
-.PHONY : srcs/zoom.c.i
+srcs/movement.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/movement.c.i
+.PHONY : srcs/movement.c.i
 
-srcs/zoom.s: srcs/zoom.c.s
+srcs/movement.s: srcs/movement.c.s
 
-.PHONY : srcs/zoom.s
+.PHONY : srcs/movement.s
 
 # target to generate assembly for a file
-srcs/zoom.c.s:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/zoom.c.s
-.PHONY : srcs/zoom.c.s
+srcs/movement.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/movement.c.s
+.PHONY : srcs/movement.c.s
 
 # Help Target
 help:
@@ -324,6 +351,9 @@ help:
 	@echo "... srcs/argument.o"
 	@echo "... srcs/argument.i"
 	@echo "... srcs/argument.s"
+	@echo "... srcs/burning_ship.o"
+	@echo "... srcs/burning_ship.i"
+	@echo "... srcs/burning_ship.s"
 	@echo "... srcs/display.o"
 	@echo "... srcs/display.i"
 	@echo "... srcs/display.s"
@@ -339,9 +369,9 @@ help:
 	@echo "... srcs/mandelbrot.o"
 	@echo "... srcs/mandelbrot.i"
 	@echo "... srcs/mandelbrot.s"
-	@echo "... srcs/zoom.o"
-	@echo "... srcs/zoom.i"
-	@echo "... srcs/zoom.s"
+	@echo "... srcs/movement.o"
+	@echo "... srcs/movement.i"
+	@echo "... srcs/movement.s"
 .PHONY : help
 
 

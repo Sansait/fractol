@@ -4,8 +4,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/fractol.dir/srcs/mandelbrot.c.o"
   "CMakeFiles/fractol.dir/srcs/display.c.o"
   "CMakeFiles/fractol.dir/srcs/argument.c.o"
-  "CMakeFiles/fractol.dir/srcs/zoom.c.o"
+  "CMakeFiles/fractol.dir/srcs/movement.c.o"
   "CMakeFiles/fractol.dir/srcs/julia.c.o"
+  "CMakeFiles/fractol.dir/srcs/burning_ship.c.o"
   "fractol.pdb"
   "fractol"
 )

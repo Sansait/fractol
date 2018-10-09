@@ -5,12 +5,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/sklepper/Dev/fractol/srcs/argument.c" "/Users/sklepper/Dev/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/argument.c.o"
+  "/Users/sklepper/Dev/fractol/srcs/burning_ship.c" "/Users/sklepper/Dev/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/burning_ship.c.o"
   "/Users/sklepper/Dev/fractol/srcs/display.c" "/Users/sklepper/Dev/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/display.c.o"
   "/Users/sklepper/Dev/fractol/srcs/event.c" "/Users/sklepper/Dev/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/event.c.o"
   "/Users/sklepper/Dev/fractol/srcs/julia.c" "/Users/sklepper/Dev/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/julia.c.o"
   "/Users/sklepper/Dev/fractol/srcs/main.c" "/Users/sklepper/Dev/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/main.c.o"
   "/Users/sklepper/Dev/fractol/srcs/mandelbrot.c" "/Users/sklepper/Dev/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/mandelbrot.c.o"
-  "/Users/sklepper/Dev/fractol/srcs/zoom.c" "/Users/sklepper/Dev/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/zoom.c.o"
+  "/Users/sklepper/Dev/fractol/srcs/movement.c" "/Users/sklepper/Dev/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/movement.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

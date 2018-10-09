@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   mandelbrot.c                                       :+:      :+:    :+:   */
+/*   burning_ship.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sklepper <sklepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/09/14 11:41:23 by sklepper          #+#    #+#             */
-/*   Updated: 2018/10/09 11:53:38 by sklepper         ###   ########.fr       */
+/*   Created: 2018/10/09 13:44:18 by sklepper          #+#    #+#             */
+/*   Updated: 2018/10/09 13:48:05 by sklepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/fractol.h"
 
-int		mandelbrot(double x, double y, t_mlx *mlx)
+int		ship(double x, double y, t_mlx *mlx)
 {
 	double	dx;
 	double	dx_tmp;
@@ -26,16 +26,17 @@ int		mandelbrot(double x, double y, t_mlx *mlx)
 	{
 		dx_tmp = dx * dx - dy * dy + x;
 		dy = 2 * dx * dy + y;
-		dx = dx_tmp;
+		dy = dy > 0 ? dy : -dy;
+		dx = dx_tmp > 0 ? dx_tmp : -dx_tmp;
 		i++;
 	}
 	if (i == mlx->i_max)
 		return (0);
 	return (((255 - (i * mlx->r) % 255)) << 16) +
-	((255 - ((i * mlx->g) % 255)) << 8) + (255 - ((i * mlx->b) % 255));
+		   ((255 - ((i * mlx->g) % 255)) << 8) + (255 - ((i * mlx->b) % 255));
 }
 
-void	draw_mandelbrot(t_mlx *mlx)
+void	draw_ship(t_mlx *mlx)
 {
 	t_double	d;
 	t_double	c;
@@ -52,7 +53,7 @@ void	draw_mandelbrot(t_mlx *mlx)
 		{
 			c.x = (d.x - WIDTH / 2.0) * 4.0 / WIDTH;
 			c.y = (d.y - HEIGHT / 2.0) * 4.0 / WIDTH;
-			mlx->img[y * WIDTH + x] = mandelbrot(c.x, c.y, mlx);
+			mlx->img[y * WIDTH + x] = ship(c.x, c.y, mlx);
 			x++;
 			d.x += mlx->x_inc;
 		}
