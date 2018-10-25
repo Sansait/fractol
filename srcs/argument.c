@@ -6,7 +6,7 @@
 /*   By: sklepper <sklepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/25 17:45:15 by sklepper          #+#    #+#             */
-/*   Updated: 2018/10/09 14:03:47 by sklepper         ###   ########.fr       */
+/*   Updated: 2018/10/25 17:25:08 by sklepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ void	w_fractal(t_data *d)
 	}
 	else
 	{
-		ft_putendl("usage");
-		exit (0);
+		ft_putendl("usage: ./fractol <julia> <mandelbrot> <ship>");
+		exit(0);
 	}
 }

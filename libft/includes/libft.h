@@ -95,7 +95,7 @@ char			*ft_strjoinch(char *s1, char c);
 char			*ft_straddend(char *s1, char const *s2);
 char			*ft_strremb(char *str, char c);
 int				ft_copyuntil(char **dst, char *src, char c);
-int 			get_next_line(int fd, char **line);
+int				get_next_line(int fd, char **line);
 int				ft_count_words(char const *str, char c);
 int				ft_is_space(int c);
 

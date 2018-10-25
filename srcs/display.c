@@ -19,6 +19,7 @@ int		display(t_data *d)
 		centraldisp(d);
 		d->render = 0;
 	}
+	return (0);
 }
 
 void	centraldisp(t_data *d)

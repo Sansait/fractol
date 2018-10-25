@@ -40,7 +40,7 @@ int		main(int ac, char **av)
 
 	if (ac != 2)
 	{
-		ft_putendl("usage");
+		ft_putendl("usage: ./fractol <julia> <mandelbrot> <ship>");
 		return (0);
 	}
 	if (!(d = malloc(sizeof(t_data))))

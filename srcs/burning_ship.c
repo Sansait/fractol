@@ -6,7 +6,7 @@
 /*   By: sklepper <sklepper@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/10/09 13:44:18 by sklepper          #+#    #+#             */
-/*   Updated: 2018/10/09 13:48:05 by sklepper         ###   ########.fr       */
+/*   Updated: 2018/10/25 17:26:25 by sklepper         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int		ship(double x, double y, t_mlx *mlx)
 	if (i == mlx->i_max)
 		return (0);
 	return (((255 - (i * mlx->r) % 255)) << 16) +
-		   ((255 - ((i * mlx->g) % 255)) << 8) + (255 - ((i * mlx->b) % 255));
+	((255 - ((i * mlx->g) % 255)) << 8) + (255 - ((i * mlx->b) % 255));
 }
 
 void	draw_ship(t_mlx *mlx)
